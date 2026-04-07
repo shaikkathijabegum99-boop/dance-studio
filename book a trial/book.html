@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Trial Class | City Beats Dance Studio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/slogo.jpg.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../global/global.css" />
+  <link rel="stylesheet" href="book.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- =========================
+       BOOK TRIAL SECTION
+  ========================= -->
+  <section class="trial-page">
+    <div class="container trial-layout">
+
+      <!-- Left Content -->
+      <div class="trial-info">
+        <span class="section-badge">Start Your Journey</span>
+        <h1>Book Your <span>Free Trial Class</span></h1>
+        <p>
+          Experience the energy of City Beats Dance Studio with a trial class.
+          Discover your style, meet our instructors, and step into a space full of rhythm,
+          creativity, and confidence.
+        </p>
+
+        <div class="trial-features">
+          <div class="trial-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Beginner Friendly Classes</span>
+          </div>
+
+          <div class="trial-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Expert Dance Instructors</span>
+          </div>
+
+          <div class="trial-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Flexible Trial Timings</span>
+          </div>
+
+          <div class="trial-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>All Age Groups Welcome</span>
+          </div>
+        </div>
+
+        <div class="trial-contact-mini">
+          <div class="mini-box">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <strong>Call Us</strong>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="mini-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Studio Location</strong>
+              <p>City Beats Dance Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="trial-form-card">
+        <div class="form-top">
+          <span class="form-tag">Book Now</span>
+          <h2>Reserve Your Trial Spot</h2>
+          <p>Fill in your details and we’ll contact you shortly.</p>
+        </div>
+
+        <form id="trialForm" class="trial-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" required />
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+              <label>Age Group</label>
+              <select id="ageGroup" required>
+                <option value="">Select age group</option>
+                <option>Kids (5-12)</option>
+                <option>Teens (13-18)</option>
+                <option>Adults (18+)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Dance Style</label>
+              <select id="danceStyle" required>
+                <option value="">Choose a dance style</option>
+                <option>Hip Hop</option>
+                <option>Contemporary</option>
+                <option>Bollywood</option>
+                <option>Kids Dance</option>
+                <option>Jazz</option>
+                <option>Salsa</option>
+                <option>Freestyle</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" id="date" required />
+            </div>
+
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <select id="time" required>
+                <option value="">Select time slot</option>
+                <option>08:00 AM - 09:00 AM</option>
+                <option>10:00 AM - 11:00 AM</option>
+                <option>04:00 PM - 05:00 PM</option>
+                <option>06:00 PM - 07:00 PM</option>
+                <option>07:00 PM - 08:00 PM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Experience Level</label>
+              <select id="experience" required>
+                <option value="">Select experience</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Additional Notes</label>
+            <textarea id="message" rows="5" placeholder="Tell us anything you'd like us to know..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            Book Trial Class
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Success Popup -->
+  <div class="success-popup" id="successPopup">
+    <div class="success-box">
+      <i class="fas fa-check-circle"></i>
+      <h3>Trial Booked Successfully!</h3>
+      <p>We’ll contact you shortly with your class confirmation.</p>
+      <button id="closePopup" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="book.js"></script>
+</body>
+</html>
