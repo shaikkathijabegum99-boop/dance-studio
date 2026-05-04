@@ -4,9 +4,11 @@
     linear-gradient(180deg, rgba(225, 29, 72, 0.08), transparent),
     var(--light);
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
-
+.services-hero + .section {
+  padding-top: 40px; /* tighter spacing */
+}
 body.dark-mode .services-hero {
   background:
     radial-gradient(circle at top, rgba(168, 85, 247, 0.18), transparent 70%),
@@ -476,8 +478,40 @@ body.dark-mode .cta-box .btn-secondary:hover {
   }
 }
 
+.service-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
 
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-card:hover .service-img img {
+  transform: scale(1.05);
+}
 
+.service-img img {
+  transition: 0.4s ease;
+}
 
+.join-cta {
+  padding: 60px 0;
+  background: var(--soft);
+  text-align: center;
+}
 
+.join-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.join-cta p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
 

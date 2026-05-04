@@ -1,27 +1,55 @@
 
+/* =========================
+   CONTACT HERO (ENHANCED)
+========================= */
+
 .contact-hero {
-  background: linear-gradient(135deg, rgba(255, 77, 109, 0.08), rgba(255, 140, 102, 0.08));
-  padding: 120px 0 90px;
+  position: relative;
+  padding: 120px 0 110px;
+  color: #fff;
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url("../images/home2.jpg") center/cover no-repeat;
+}
+
+/* glow effect */
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 60%);
 }
 
 .contact-hero-content {
-  max-width: 760px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+  margin: auto;
 }
 
-.contact-hero-content h1 {
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  line-height: 1.15;
-  margin: 18px 0 18px;
+.contact-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.1;
 }
 
-.contact-hero-content p {
-  font-size: 1.08rem;
-  color: var(--text-light);
-  max-width: 680px;
-  margin: 0 auto;
-  line-height: 1.9;
+.contact-hero p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.9;
 }
+
+/* badge */
+.contact-hero .section-badge {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  padding: 10px;border-radius: 40px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
 
 .contact-main {
   background: var(--light-bg);
@@ -276,49 +304,94 @@
   line-height: 1.85;
 }
 
+/* =========================
+   CTA SECTION (PREMIUM)
+========================= */
 
 .cta-section {
-  padding: 0;
-  background: transparent;
+  padding: 80px 0 0;
 }
 
 .cta-box {
-  background: #f7efe8;
-  padding: 85px 20px;
-  border-radius: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
-  border-bottom: none;
+  background: linear-gradient(135deg, var(--primary), #fb7185);
+  color: #fff;
+
+  padding: 90px 30px 70px;
+ 
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
 }
 
-.cta-box .section-tag {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #b8844f;
-  margin-bottom: 14px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+/* subtle light blobs */
+.cta-box::before,
+.cta-box::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
 }
 
+.cta-box::before {
+  top: -100px;
+  left: -80px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255,255,255,0.15);
+}
+
+.cta-box::after {
+  bottom: -120px;
+  right: -60px;
+  width: 280px;
+  height: 280px;
+  background: rgba(255,255,255,0.12);
+}
+
+/* TEXT */
 .cta-box h2 {
   font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
   margin-bottom: 16px;
-  color: #1a1a1a;
 }
 
 .cta-box p {
-  max-width: 720px;
-  margin: 0 auto 28px;
-  font-size: 1.05rem;
-  color: #6f6f6f;
-  line-height: 1.9;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  opacity: 0.9;
 }
 
+/* BUTTON GROUP */
 .cta-actions {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
+}
+
+/* PRIMARY */
+.cta-box .btn-primary {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid #fff;
+  font-weight: 700;
+}
+
+/* 🔥 SECONDARY → CTA STYLE */
+.cta-box .btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.4);
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+}
+
+.cta-box .btn-secondary:hover {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
 }
 
 

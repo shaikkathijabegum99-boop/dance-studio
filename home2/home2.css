@@ -725,7 +725,7 @@ html[dir="rtl"] .program-link i {
   background: linear-gradient(135deg, var(--primary), #fb7185);
   color: #fff;
 
-  padding: 90px 30px 80px;
+  padding: 40px 20px 40px;
   overflow: hidden;
   box-shadow: 0 30px 80px rgba(225, 29, 72, 0.22);
   margin-bottom: 0 !important;
