@@ -45,7 +45,7 @@ body.dark-mode .trial-page {
     linear-gradient(135deg, #111827 0%, #0f172a 50%, #111827 100%);
 }
 
-/* Layout */
+
 .trial-layout {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
@@ -200,7 +200,7 @@ body.dark-mode .form-top h2 {
   color: #fff;
 }
 
-/* Form */
+
 .trial-form {
   width: 100%;
 }

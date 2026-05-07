@@ -14,7 +14,7 @@
     url("../images/home2.jpg") center/cover no-repeat;
 }
 
-/* glow effect */
+
 .contact-hero::after {
   content: "";
   position: absolute;
@@ -42,7 +42,7 @@
   opacity: 0.9;
 }
 
-/* badge */
+
 .contact-hero .section-badge {
   background: rgba(255,255,255,0.18);
   color: #fff;
@@ -324,7 +324,7 @@
   overflow: hidden;
 }
 
-/* subtle light blobs */
+
 .cta-box::before,
 .cta-box::after {
   content: "";
@@ -349,7 +349,7 @@
   background: rgba(255,255,255,0.12);
 }
 
-/* TEXT */
+
 .cta-box h2 {
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
@@ -363,7 +363,7 @@
   opacity: 0.9;
 }
 
-/* BUTTON GROUP */
+
 .cta-actions {
   display: flex;
   justify-content: center;
@@ -371,7 +371,7 @@
   flex-wrap: wrap;
 }
 
-/* PRIMARY */
+
 .cta-box .btn-primary {
   background: #fff;
   color: var(--primary);
@@ -379,7 +379,7 @@
   font-weight: 700;
 }
 
-/* 🔥 SECONDARY → CTA STYLE */
+
 .cta-box .btn-secondary {
   background: rgba(255,255,255,0.15);
   color: #fff;

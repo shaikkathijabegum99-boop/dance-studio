@@ -131,12 +131,12 @@ img {
 }
 .sidebar-nav a,
 .sidebar-bottom a {
-  padding: 14px 12px; /* tighter */
+  padding: 14px 12px; 
   width: 100%;
 }
 .sidebar-nav a i,
 .sidebar-bottom a i {
-  min-width: 22px; /* fixes icon alignment */
+  min-width: 22px; 
   text-align: center;
 }
 .sidebar-nav a,

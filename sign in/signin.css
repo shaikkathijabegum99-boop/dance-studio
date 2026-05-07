@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-/* BRAND */
+
 .brand {
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@
   box-shadow: 0 0 0 4px rgba(255, 77, 109, 0.08);
 }
 
-/* PASSWORD */
+
 .password-wrap {
   position: relative;
 }
@@ -226,7 +226,7 @@
   justify-content: center;
 }
 
-/* OPTIONS */
+
 .auth-options {
   display: flex;
   justify-content: space-between;
@@ -258,7 +258,7 @@
   text-decoration: underline;
 }
 
-/* BUTTON */
+
 .auth-btn {
   width: 100%;
   height: 58px;
@@ -267,7 +267,7 @@
   font-weight: 700;
 }
 
-/* DIVIDER */
+
 .divider {
   position: relative;
   text-align: center;
@@ -291,7 +291,7 @@
   font-size: 0.92rem;
 }
 
-/* SOCIAL */
+
 .social-login {
   display: grid;
   grid-template-columns: 1fr;
@@ -317,7 +317,7 @@
   margin-right: 8px;
 }
 
-/* APPLE */
+
 .social-btn.apple {
   background: #000;
   color: #fff;
@@ -328,7 +328,7 @@
   background: #111;
 }
 
-/* SWITCH */
+
 .auth-switch {
   text-align: center;
   color: var(--text-light);

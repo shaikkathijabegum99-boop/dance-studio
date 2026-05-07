@@ -7,7 +7,7 @@
   padding-bottom: 40px;
 }
 .services-hero + .section {
-  padding-top: 40px; /* tighter spacing */
+  padding-top: 40px; 
 }
 body.dark-mode .services-hero {
   background:
@@ -233,7 +233,7 @@ body.dark-mode .benefit-card i {
   margin-bottom: 0 !important;
 }
 
-/* Decorative glow */
+
 .cta-box::before {
   content: "";
   position: absolute;

@@ -56,7 +56,7 @@ function reverseNavLinks(dir) {
   const nav = document.querySelector(".nav-links");
   if (!nav) return;
 
-  // Save original order ONCE
+
   if (!nav.dataset.original) {
     nav.dataset.original = "true";
     nav._originalItems = Array.from(nav.children);
@@ -67,10 +67,10 @@ function reverseNavLinks(dir) {
   nav.innerHTML = "";
 
   if (dir === "rtl") {
-    // RTL: Dashboard → Home
+
     [...items].reverse().forEach(item => nav.appendChild(item));
   } else {
-    // LTR: Home → Dashboard
+
     items.forEach(item => nav.appendChild(item));
   }
 }
@@ -102,7 +102,7 @@ function initNavbar() {
   const mobileMenu = document.getElementById("mobile-menu");
   const dropdowns = document.querySelectorAll(".has-dropdown");
 
-  /* Toggle Mobile Menu */
+  
   hamburger?.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
 
@@ -110,7 +110,7 @@ function initNavbar() {
     hamburger.setAttribute("aria-expanded", !expanded);
   });
 
-  /* Dropdown click (tablet/mobile) */
+  
   dropdowns.forEach((dropdown) => {
     const link = dropdown.querySelector(".nav-link");
 
@@ -127,7 +127,7 @@ function initNavbar() {
     });
   });
 
-  /* Close outside click */
+  
   document.addEventListener("click", (e) => {
     if (
       mobileMenu?.classList.contains("active") &&
@@ -152,13 +152,13 @@ function initControls() {
   applyTheme(savedTheme);
   applyDirection(savedDir);
 
-  /* Theme toggle */
+  
   themeBtn?.addEventListener("click", () => {
     const current = localStorage.getItem("theme") || "light";
     applyTheme(current === "dark" ? "light" : "dark");
   });
 
-  /* RTL toggle */
+  
   rtlBtn?.addEventListener("click", () => {
     const current = document.documentElement.getAttribute("dir");
     applyDirection(current === "rtl" ? "ltr" : "rtl");

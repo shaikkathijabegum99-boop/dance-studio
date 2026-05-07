@@ -36,7 +36,7 @@
   justify-content: center;
 }
 
-/* ✅ BRAND (FIXED + CONSISTENT) */
+
 .brand {
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@
   display: block;
 }
 
-/* INPUT */
+
 .input-wrap {
   position: relative;
 }
@@ -185,7 +185,7 @@
   box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
 }
 
-/* ✅ PASSWORD FIX */
+
 .password-wrap {
   position: relative;
 }
@@ -207,7 +207,7 @@
   align-items: center;
 }
 
-/* ✅ CHECKBOX ALIGN (REMEMBER / TERMS) */
+
 .auth-options {
   display: flex;
   align-items: center;
@@ -227,7 +227,7 @@
   cursor: pointer;
 }
 
-/* BUTTON */
+
 .auth-btn {
   width: 100%;
   padding: 16px;
@@ -283,7 +283,7 @@
   transform: translateY(-2px);
 }
 
-/* ✅ APPLE BUTTON */
+
 .social-btn.apple {
   background: #000;
   color: #fff;
