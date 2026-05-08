@@ -298,3 +298,99 @@ body.dark-mode select:focus {
 .site-footer {
   margin-top: 0 !important;
 }
+/* =========================
+   GLOBAL FIX
+========================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+body {
+  min-height: 200vh;
+}
+
+
+body,
+main,
+section,
+.container,
+.wrapper {
+  overflow: visible !important;
+}
+
+/* =========================
+   HEADER STICKY
+========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid var(--border);
+
+  transition: all 0.3s ease;
+}
+
+
+body.dark-mode .site-header {
+  background: rgba(10,10,14,0.96);
+}
+
+
+.site-header.scrolled {
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+
+.nav-container {
+  width: min(92%, 1320px);
+  margin: auto;
+
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.header-actions {
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 1024px) {
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav-container {
+    min-height: 74px;
+  }
+
+  .nav-logo-img {
+    width: 48px;
+    height: 48px;
+  }
+}

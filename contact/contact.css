@@ -519,3 +519,6 @@ body.dark-mode .cta-box .section-tag {
     border-radius: 22px;
   }
 }
+.section-title{
+  color:var(--primary);
+}

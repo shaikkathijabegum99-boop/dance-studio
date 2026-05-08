@@ -176,3 +176,28 @@ document.addEventListener("DOMContentLoaded", async () => {
   initControls();
   setActiveMenu();
 });
+/* =========================
+   STICKY HEADER
+========================= */
+
+window.addEventListener("load", () => {
+
+  const header = document.querySelector(".site-header");
+
+  if (!header) return;
+
+  const handleScroll = () => {
+
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+
+  };
+
+  handleScroll();
+
+  window.addEventListener("scroll", handleScroll);
+
+});

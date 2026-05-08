@@ -1,19 +1,49 @@
 
 .services-hero {
+  position: relative;
+
   background:
-    linear-gradient(180deg, rgba(225, 29, 72, 0.08), transparent),
-    var(--light);
-  padding-top: 120px;
-  padding-bottom: 40px;
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/private.jpg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 140px;
+  padding-bottom: 100px;
+
+  overflow: hidden;
+}
+
+
+body.dark-mode .services-hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url("../images/private.jpg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.services-hero .services-title,
+.services-hero .services-subtitle,
+.services-hero .section-badge {
+  color: #fff;
+}
+
+
+.services-hero .section-badge {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
 }
 .services-hero + .section {
   padding-top: 40px; 
 }
-body.dark-mode .services-hero {
-  background:
-    radial-gradient(circle at top, rgba(168, 85, 247, 0.18), transparent 70%),
-    var(--light);
-}
+
 
 .services-hero-content {
   max-width: 860px;

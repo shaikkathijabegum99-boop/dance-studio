@@ -105,7 +105,7 @@
 }
 
 .feature-item i {
-  color: #ffcc00;
+  color: var(--primary);
 }
 
 /* =========================
