@@ -837,3 +837,233 @@ html[dir="rtl"] .nav-link.active::after {
 html[dir="rtl"] .nav-link.active {
   text-align: right;
 }
+
+
+
+/* =========================================================
+   MOBILE
+   < 640px
+========================================================= */
+
+@media screen and (max-width: 639px){
+
+  body{
+    padding-top: 74px;
+  }
+
+  .nav-container{
+    width: 94%;
+    min-height: 72px;
+    gap: 10px;
+  }
+
+  .desktop-nav{
+    display: none;
+  }
+
+  .hamburger{
+    display: inline-flex;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburger span{
+    width: 18px;
+  }
+
+  .action-btn{
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-logo-img{
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  .brand-name{
+    font-size: 0.88rem;
+  }
+
+  .brand-subtext{
+    font-size: 0.60rem;
+    letter-spacing: 1px;
+  }
+
+  .mobile-menu{
+    padding: 14px 0 20px;
+  }
+
+  .mobile-links{
+    width: 94%;
+    gap: 10px;
+  }
+
+  .mobile-links li a{
+    padding: 13px 14px;
+    font-size: 0.92rem;
+    border-radius: 12px;
+  }
+
+  .site-footer{
+    padding-top: 65px;
+  }
+
+  .footer-container{
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 40px;
+
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact-box{
+    align-items: center;
+  }
+
+  .footer-description{
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+  }
+
+  .footer-logo-img{
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-brand-name{
+    font-size: 0.95rem;
+  }
+
+  .footer-brand-subtext{
+    font-size: 0.65rem;
+  }
+
+  .footer-title{
+    font-size: 0.95rem;
+  }
+
+  .footer-contact-item{
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+  }
+
+  .footer-social{
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-socials,
+  .footer-bottom-links{
+    justify-content: center;
+  }
+
+  .footer-bottom-content{
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 10px;
+  }
+
+  .footer-bottom-links{
+    gap: 12px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   640px - 1024px
+========================================================= */
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+
+  .desktop-nav{
+    display: none;
+  }
+
+  .hamburger{
+    display: inline-flex;
+  }
+
+  .nav-container{
+    width: 92%;
+    gap: 16px;
+  }
+
+  .nav-logo-img{
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-name{
+    font-size: 0.95rem;
+  }
+
+  .brand-subtext{
+    font-size: 0.68rem;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 40px;
+
+    padding-bottom: 50px;
+
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact-box{
+    align-items: center;
+  }
+
+  .footer-description{
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .footer-contact-item{
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .footer-socials,
+  .footer-bottom-links{
+    justify-content: center;
+  }
+
+  .footer-bottom-content{
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 14px;
+  }
+}

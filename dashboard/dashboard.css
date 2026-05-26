@@ -171,7 +171,7 @@ body.dark-mode .sidebar{
 
 .sidebar-nav{
   padding: 24px 16px;
-
+height: 70vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -787,3 +787,4 @@ html[dir="rtl"] .progress-top{
     flex: 1;
   }
 }
+
