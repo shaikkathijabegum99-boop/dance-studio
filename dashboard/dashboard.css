@@ -788,3 +788,308 @@ html[dir="rtl"] .progress-top{
   }
 }
 
+/* ========================================
+   SIDEBAR
+======================================== */
+
+.sidebar{
+  width: 290px;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: var(--card);
+
+  border-right: 1px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+
+  transition: 0.3s ease;
+
+  overflow: hidden;
+}
+
+/* ========================================
+   SIDEBAR TOP
+======================================== */
+
+.sidebar-top{
+  position: relative;
+
+  padding: 24px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: var(--text);
+}
+
+.brand img{
+  width: 58px;
+  height: 58px;
+
+  border-radius: 16px;
+
+  object-fit: cover;
+}
+
+.brand-text h2{
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.brand-text p{
+  margin-top: 4px;
+
+  font-size: 0.82rem;
+
+  color: var(--text-light);
+}
+
+/* ========================================
+   CLOSE BUTTON
+======================================== */
+
+.sidebar-close{
+  display: none;
+
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(255,77,109,0.12);
+
+  color: var(--primary);
+
+  cursor: pointer;
+}
+
+/* ========================================
+   SIDEBAR NAV
+======================================== */
+
+.sidebar-nav{
+  flex: 1;
+
+  padding: 20px 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  overflow-y: auto;
+}
+
+.sidebar-nav a,
+.sidebar-bottom a{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  border-radius: 16px;
+
+  color: var(--text-light);
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.sidebar-nav a i,
+.sidebar-bottom a i{
+  width: 22px;
+
+  text-align: center;
+
+  font-size: 1rem;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active,
+.sidebar-bottom a:hover{
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    #fb7185
+  );
+
+  color: #fff;
+
+  transform: translateX(4px);
+}
+
+/* ========================================
+   SIDEBAR BOTTOM
+======================================== */
+
+.sidebar-bottom{
+  padding: 18px;
+
+  border-top: 1px solid var(--border);
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.main-content{
+  margin-left: 290px;
+
+  padding: 24px;
+
+  transition: 0.3s ease;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 639px){
+
+  .sidebar{
+    width: 280px;
+
+    transform: translateX(-100%);
+
+    overflow-y: auto;
+  }
+
+  .sidebar.active{
+    transform: translateX(0);
+  }
+
+  .sidebar-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content{
+    margin-left: 0;
+
+    padding: 16px;
+  }
+
+  .sidebar-nav{
+    padding: 18px 12px;
+  }
+
+  .sidebar-nav a{
+    padding: 12px 14px;
+  }
+
+  .brand img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .brand-text h2{
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (min-width: 640px) and (max-width: 1024px){
+
+  .sidebar{
+    width: 260px;
+
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active{
+    transform: translateX(0);
+  }
+
+  .sidebar-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content{
+    margin-left: 0;
+
+    padding: 22px;
+  }
+
+  .sidebar-nav{
+    padding: 20px 14px;
+  }
+}
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 1024px) and (max-width: 1280px){
+
+  .sidebar{
+    width: 260px;
+
+    transform: translateX(0);
+  }
+
+  .main-content{
+    margin-left: 260px;
+  }
+
+  .menu-toggle,
+  .sidebar-close{
+    display: none;
+  }
+}
+
+/* ========================================
+   LARGE SCREEN
+======================================== */
+
+@media (min-width: 1281px){
+
+  .sidebar{
+    width: 290px;
+  }
+
+  .main-content{
+    margin-left: 290px;
+  }
+
+  .menu-toggle,
+  .sidebar-close{
+    display: none;
+  }
+}
