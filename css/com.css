@@ -1067,3 +1067,73 @@ html[dir="rtl"] .nav-link.active {
     gap: 14px;
   }
 }
+/* =========================
+   MOBILE ACTIONS
+========================= */
+
+.mobile-actions{
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mobile-actions .nav-btn{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.full-width{
+  width: 100%;
+}
+
+/* =========================================================
+   MOBILE
+   < 640px
+========================================================= */
+
+@media screen and (max-width: 639px){
+
+  .mobile-actions{
+    display: flex;
+  }
+
+  .mobile-actions .nav-btn{
+    padding: 14px 18px;
+    font-size: 0.92rem;
+    border-radius: 14px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   640px - 1024px
+========================================================= */
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+
+  .mobile-actions{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-actions .nav-btn{
+    flex: 1;
+    padding: 15px 18px;
+  }
+}
+
+/* =========================================================
+   DESKTOP + LARGE
+   > 1024px
+========================================================= */
+
+@media screen and (min-width: 1024px){
+
+  .mobile-actions{
+    display: none;
+  }
+}
