@@ -38,3 +38,44 @@ toggleButtons.forEach((btn) => {
     }
   });
 });
+/* ===========================
+   THEME TOGGLE
+=========================== */
+
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  const icon = themeToggle.querySelector("i");
+
+  if (document.body.classList.contains("dark-mode")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+
+});
+
+/* ===========================
+   RTL TOGGLE
+=========================== */
+
+const rtlToggle = document.getElementById("rtlToggle");
+
+rtlToggle.addEventListener("click", () => {
+
+  const html = document.documentElement;
+
+  if (html.getAttribute("dir") === "rtl") {
+    html.setAttribute("dir", "ltr");
+    html.setAttribute("lang", "en");
+  } else {
+    html.setAttribute("dir", "rtl");
+    html.setAttribute("lang", "ar");
+  }
+
+});

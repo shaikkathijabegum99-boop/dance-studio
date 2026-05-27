@@ -1,8 +1,53 @@
 /* =========================
+   PAGE ACTIONS
+========================= */
+
+.page-actions {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 100;
+}
+
+html[dir="rtl"] .page-actions {
+  right: auto;
+  left: 24px;
+}
+
+.action-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  color: var(--heading);
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* =========================
    AUTH PAGE
 ========================= */
+
 .auth-page {
   min-height: 100vh;
+  position: relative;
   background:
     radial-gradient(circle at top left, rgba(255, 77, 109, 0.14), transparent 30%),
     radial-gradient(circle at bottom right, rgba(255, 170, 0, 0.12), transparent 28%),
@@ -18,63 +63,96 @@
   max-width: 1180px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255,255,255,0.88);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 77, 109, 0.08);
+  border: 1px solid rgba(255,77,109,0.08);
   border-radius: 32px;
   overflow: hidden;
-  box-shadow: 0 25px 80px rgba(17, 17, 17, 0.08);
+  box-shadow: 0 25px 80px rgba(17,17,17,0.08);
 }
 
 /* =========================
    LEFT SIDE
 ========================= */
+
 .auth-left {
   padding: 70px 60px;
-  background: linear-gradient(135deg, rgba(255, 77, 109, 0.08), rgba(255, 170, 0, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(255,77,109,0.08),
+    rgba(255,170,0,0.08)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* =========================
+   LOGO BOX
+========================= */
 
-.brand {
-  display: flex;
+.logo-box {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.brand:hover {
-  opacity: 0.85;
-}
-
-.brand img {
-  width: 42px;
-  height: 42px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.brand h2,
-.brand h3 {
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading);
-}
-
-.brand-top {
   justify-content: center;
-  margin-bottom: 18px;
+  gap: 8px;
+  text-decoration: none;
+  margin-bottom: 28px;
 }
+
+/* =========================
+   LOGO IMAGE
+========================= */
+
+.nav-logo-img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: 0.3s ease;
+ 
+}
+
+.logo-box:hover .nav-logo-img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   LOGO TEXT
+========================= */
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  text-align: left;
+}
+
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+}
+
+.brand-subtext {
+  margin-top: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--text-light);
+}
+
+/* =========================
+   AUTH CONTENT
+========================= */
 
 .auth-badge {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 999px;
-  background: rgba(255, 77, 109, 0.12);
+  
   color: var(--primary);
   font-weight: 700;
   font-size: 0.9rem;
@@ -82,17 +160,16 @@
 }
 
 .auth-left h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
   line-height: 1.15;
   margin-bottom: 18px;
   color: var(--heading);
 }
 
 .auth-left p {
-  font-size: 1.06rem;
-  color: var(--text-light);
+  font-size: 1.05rem;
   line-height: 1.9;
-  max-width: 520px;
+  color: var(--text-light);
   margin-bottom: 34px;
 }
 
@@ -110,10 +187,10 @@
 }
 
 .feature-item i {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background: rgba(255, 77, 109, 0.12);
+  background: rgba(255,77,109,0.12);
   color: var(--primary);
   display: flex;
   align-items: center;
@@ -123,6 +200,7 @@
 /* =========================
    RIGHT SIDE
 ========================= */
+
 .auth-right {
   display: flex;
   align-items: center;
@@ -136,13 +214,13 @@
   background: #fff;
   border-radius: 28px;
   padding: 44px 36px;
-  box-shadow: 0 18px 55px rgba(17, 17, 17, 0.07);
-  border: 1px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0 18px 55px rgba(17,17,17,0.07);
 }
 
 /* =========================
    HEADER
 ========================= */
+
 .auth-header {
   margin-bottom: 28px;
 }
@@ -161,6 +239,7 @@
 /* =========================
    FORM
 ========================= */
+
 .auth-form {
   display: grid;
   gap: 22px;
@@ -180,7 +259,7 @@
 .input-wrap i {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 18px;
   transform: translateY(-50%);
   color: var(--text-light);
   font-size: 0.9rem;
@@ -200,13 +279,10 @@
 
 .input-wrap input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(255, 77, 109, 0.08);
+  box-shadow: 0 0 0 4px rgba(255,77,109,0.08);
 }
 
-
-.password-wrap {
-  position: relative;
-}
+/* PASSWORD */
 
 .password-wrap input {
   padding-right: 55px;
@@ -221,11 +297,9 @@
   border: none;
   cursor: pointer;
   color: var(--text-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+/* OPTIONS */
 
 .auth-options {
   display: flex;
@@ -237,15 +311,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.95rem;
-  cursor: pointer;
   color: var(--text-light);
-}
-
-.remember-me input {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
+  font-size: 0.95rem;
 }
 
 .forgot-link {
@@ -258,6 +325,7 @@
   text-decoration: underline;
 }
 
+/* BUTTON */
 
 .auth-btn {
   width: 100%;
@@ -267,17 +335,18 @@
   font-weight: 700;
 }
 
+/* DIVIDER */
 
 .divider {
   position: relative;
   text-align: center;
-  margin: 4px 0;
 }
 
 .divider::before {
   content: "";
   position: absolute;
   top: 50%;
+  left: 0;
   width: 100%;
   height: 1px;
   background: var(--border);
@@ -288,13 +357,12 @@
   background: #fff;
   padding: 0 14px;
   color: var(--text-light);
-  font-size: 0.92rem;
 }
 
+/* SOCIAL LOGIN */
 
 .social-login {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 12px;
 }
 
@@ -317,17 +385,13 @@
   margin-right: 8px;
 }
 
-
 .social-btn.apple {
   background: #000;
   color: #fff;
   border: none;
 }
 
-.social-btn.apple:hover {
-  background: #111;
-}
-
+/* SWITCH */
 
 .auth-switch {
   text-align: center;
@@ -340,28 +404,71 @@
   text-decoration: none;
 }
 
-.auth-switch a:hover {
-  text-decoration: underline;
+/* =========================
+   RTL SUPPORT
+========================= */
+
+html[dir="rtl"] .logo-box,
+html[dir="rtl"] .feature-item,
+html[dir="rtl"] .remember-me,
+html[dir="rtl"] .auth-options {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .logo-text,
+html[dir="rtl"] .auth-left,
+html[dir="rtl"] .auth-header,
+html[dir="rtl"] .form-group label,
+html[dir="rtl"] .auth-switch {
+  text-align: right;
+}
+
+html[dir="rtl"] .input-wrap i {
+  left: auto;
+  right: 18px;
+}
+
+html[dir="rtl"] .input-wrap input {
+  padding: 0 50px 0 18px;
+  text-align: right;
+}
+
+html[dir="rtl"] .password-wrap input {
+  padding-left: 55px;
+  padding-right: 50px;
+}
+
+html[dir="rtl"] .toggle-password {
+  right: auto;
+  left: 18px;
+}
+
+html[dir="rtl"] input::placeholder {
+  text-align: right;
 }
 
 /* =========================
    DARK MODE
 ========================= */
+
 body.dark-mode .auth-page {
   background:
-    radial-gradient(circle at top left, rgba(255, 77, 109, 0.14), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(255, 170, 0, 0.12), transparent 28%),
+    radial-gradient(circle at top left, rgba(255,77,109,0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255,170,0,0.12), transparent 28%),
     linear-gradient(135deg, #0f1115 0%, #11161d 50%, #18141a 100%);
 }
 
 body.dark-mode .auth-wrapper,
 body.dark-mode .auth-card {
-  background: rgba(20, 22, 28, 0.9);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(20,22,28,0.92);
 }
 
 body.dark-mode .auth-left {
-  background: linear-gradient(135deg, rgba(255, 77, 109, 0.12), rgba(255, 170, 0, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(255,77,109,0.12),
+    rgba(255,170,0,0.08)
+  );
 }
 
 body.dark-mode .auth-left h1,
@@ -375,19 +482,20 @@ body.dark-mode .auth-left p,
 body.dark-mode .auth-header p,
 body.dark-mode .auth-switch,
 body.dark-mode .remember-me,
-body.dark-mode .divider span {
-  color: rgba(255, 255, 255, 0.72);
+body.dark-mode .divider span,
+body.dark-mode .brand-subtext {
+  color: rgba(255,255,255,0.72);
 }
 
 body.dark-mode .divider span {
-  background: rgba(20, 22, 28, 0.9);
+  background: rgba(20,22,28,0.92);
 }
 
 body.dark-mode .input-wrap input,
 body.dark-mode .social-btn {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255,255,255,0.03);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255,255,255,0.08);
 }
 
 body.dark-mode .social-btn.apple {
@@ -395,10 +503,27 @@ body.dark-mode .social-btn.apple {
   color: #000;
 }
 
+body.dark-mode .brand-name {
+  color: var(--accent);
+}
+
+body.dark-mode .action-btn {
+  background: rgba(20,22,28,0.7);
+  color: #fff;
+  border-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode .action-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
+
 @media (max-width: 992px) {
+
   .auth-wrapper {
     grid-template-columns: 1fr;
   }
@@ -413,6 +538,7 @@ body.dark-mode .social-btn.apple {
 }
 
 @media (max-width: 576px) {
+
   .auth-page {
     padding: 20px 14px;
   }
@@ -431,6 +557,34 @@ body.dark-mode .social-btn.apple {
   .auth-options {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 12px;
+  }
+
+  .page-actions {
+    top: 16px;
+    right: 16px;
+  }
+
+  html[dir="rtl"] .page-actions {
+    right: auto;
+    left: 16px;
+  }
+
+  .logo-box {
+    gap: 6px;
+  }
+
+  .nav-logo-img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-subtext {
+    font-size: 0.62rem;
+    letter-spacing: 1.4px;
   }
 }

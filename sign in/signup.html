@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="../images/logo2.jpg.png" />
 
   <link rel="stylesheet" href="../global/global.css" />
-  <link rel="stylesheet" href="signup.css" />
+  <link rel="stylesheet" href="signin.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -16,17 +16,29 @@
 <body>
 
 <section class="auth-page">
+ <!-- THEME TOGGLE -->
+ 
   <div class="auth-wrapper">
+<div class="page-actions">
+     <button id="themeToggle" class="action-btn">
+    <i class="fas fa-moon"></i>
+  </button>
 
-    
+  <!-- RTL TOGGLE -->
+  <button id="rtlToggle" class="action-btn">
+    <i class="fas fa-right-left"></i>
+  </button>
+</div>
     <div class="auth-left">
 
       
-      <a href="../index.html" class="brand">
-        <img src="../images/logo2.jpg.png" alt="logo" />
-        <h2>City Beats Dance Studio</h2>
-      </a>
-
+      <a href="../index.html" class="logo-box">
+      <img src="../images/logo2.jpg.png" alt="City Beats Dance Studio Logo" class="nav-logo-img" />
+      <div class="logo-text">
+        <span class="brand-name">CITY BEATS</span>
+        <span class="brand-subtext">DANCE STUDIO</span>
+      </div>
+    </a>
       <span class="auth-badge">Join Our Studio</span>
 
       <h1>Create Your Account</h1>
@@ -59,11 +71,13 @@
       <div class="auth-card">
 
         
-        <a href="../index.html" class="brand brand-top">
-          <img src="../images/logo2.jpg.png" alt="logo" />
-          <h3>City Beats</h3>
-        </a>
-
+        <a href="../index.html" class="logo-box">
+      <img src="../images/logo2.jpg.png" alt="City Beats Dance Studio Logo" class="nav-logo-img" />
+      <div class="logo-text">
+        <span class="brand-name">CITY BEATS</span>
+        <span class="brand-subtext">DANCE STUDIO</span>
+      </div>
+    </a>
         <div class="auth-header">
           <h2>Create Account</h2>
           <p>Fill in your details to get started.</p>
@@ -163,7 +177,7 @@
   </div>
 </section>
 
-<script src="signup.js"></script>
+<script src="signin.js"></script>
 <script src="../global/global.js"></script>
 <script src="../js/component.js"></script>
 

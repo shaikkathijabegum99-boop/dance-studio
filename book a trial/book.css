@@ -551,3 +551,98 @@ html[dir="rtl"] .brand {
     font-size: 16px;
   }
 }
+
+/* =========================
+   LOGO BOX
+========================= */
+.logo-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-decoration:none;
+  width:fit-content;
+  margin:0 auto 20px;
+}
+
+/* =========================
+   LOGO IMAGE
+========================= */
+.nav-logo-img{
+  width:48px;
+  height:48px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:0.3s ease;
+}
+
+.logo-box:hover .nav-logo-img{
+  transform:scale(1.05);
+}
+
+/* =========================
+   LOGO TEXT
+========================= */
+.logo-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  line-height:1;
+}
+
+.brand-name{
+  font-size:1.1rem;
+  font-weight:800;
+  letter-spacing:1px;
+  color:var(--primary);
+}
+
+.brand-subtext{
+  font-size:0.68rem;
+  font-weight:600;
+  letter-spacing:1.8px;
+  color:var(--text-light);
+  margin-top:4px;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+body.dark-mode .brand-name{
+  color:var(--accent);
+}
+
+body.dark-mode .brand-subtext{
+  color:rgba(255,255,255,0.7);
+}
+
+/* =========================
+   RTL SUPPORT
+========================= */
+html[dir="rtl"] .logo-box{
+  flex-direction:row-reverse;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width:768px){
+
+  .logo-box{
+    gap:6px;
+  }
+
+  .nav-logo-img{
+    width:42px;
+    height:42px;
+  }
+
+  .brand-name{
+    font-size:1rem;
+  }
+
+  .brand-subtext{
+    font-size:0.62rem;
+    letter-spacing:1.3px;
+  }
+}
