@@ -588,3 +588,61 @@ body.dark-mode .action-btn:hover {
     letter-spacing: 1.4px;
   }
 }
+/* =========================
+   OPTIONS
+========================= */
+
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  cursor: pointer;
+  flex-wrap: nowrap;
+}
+
+.remember-me input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+  cursor: pointer;
+  margin: 0;
+}
+
+.forgot-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+@media (max-width: 576px) {
+
+  .auth-options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .remember-me {
+    font-size: 0.88rem;
+  }
+
+  .forgot-link {
+    font-size: 0.88rem;
+  }
+}
