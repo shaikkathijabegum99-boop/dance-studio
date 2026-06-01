@@ -394,3 +394,83 @@ body.dark-mode .site-header {
     height: 48px;
   }
 }
+.card-link {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  color:var(--primary);
+  font-weight:700;
+  text-decoration:none;
+
+  transition:all 0.3s ease;
+}
+
+body.dark-mode .card-link{
+  color:var(--accent);
+}
+
+.card-link::after{
+  content:"→";
+  transition:transform 0.3s ease;
+}
+
+.card-link:hover{
+  color:var(--accent);
+  transform:translateX(4px);
+}
+
+.card-link:hover::after{
+  transform:translateX(6px);
+}
+
+.card-link:active{
+  transform:translateX(2px) scale(0.98);
+}
+
+/* RTL Support */
+html[dir="rtl"] .card-link::after{
+  content:"←";
+}
+
+html[dir="rtl"] .card-link:hover{
+  transform:translateX(-4px);
+}
+
+html[dir="rtl"] .card-link:hover::after{
+  transform:translateX(-6px);
+}
+
+.section-badge,
+.section-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  color:var(--primary);
+  font-size:0.9rem;
+  font-weight:700;
+  letter-spacing:1px;
+  
+}
+
+/* Small line before text */
+.section-badge::before,
+.section-tag::before{
+  content:"";
+  width:40px;
+  height:3px;
+  border-radius:999px;
+  background:var(--primary);
+}
+
+/* Dark mode */
+body.dark-mode .section-badge,
+body.dark-mode .section-tag{
+  color:var(--accent);
+}
+
+body.dark-mode .section-badge::before,
+body.dark-mode .section-tag::before{
+  background:var(--accent);
+}

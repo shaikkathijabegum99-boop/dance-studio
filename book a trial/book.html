@@ -1,214 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Trial Class | City Beats Dance Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-  <link rel="icon" type="image/png" href="../images/logo2.jpg.png" />
+<title>Book Trial Class | City Beats Dance Studio</title>
 
-  
-  <link rel="stylesheet" href="../global/global.css" />
-  <link rel="stylesheet" href="book.css" />
+<link rel="icon" type="image/png" href="../images/logo2.jpg.png">
 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="book.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+<div class="booking-container">
 
+  <!-- TOGGLES -->
+  <div class="page-actions">
 
-<!-- =========================
-     BOOK TRIAL SECTION
-========================= -->
-<section class="trial-page">
-   
+    <button id="themeToggle" class="action-btn">
+      <i class="fas fa-moon"></i>
+    </button>
 
-  <div class="container trial-layout">
+    <button id="rtlToggle" class="action-btn">
+      <i class="fas fa-right-left"></i>
+    </button>
 
-  
-    
-    <div class="trial-info">
-      <!-- =========================================
-     DARK MODE + RTL TOGGLE BUTTONS
-========================================= -->
+  </div>
 
-<div class="page-actions">
+ 
 
-  
-  <button id="themeToggle" class="action-btn">
-    <i class="fas fa-moon"></i>
-  </button>
-
-  
-  <button id="rtlToggle" class="action-btn">
-    <i class="fas fa-right-left"></i>
-  </button>
-
-</div>
-      
+  <div class="booking-card">
+ <!-- LOGO -->
   <a href="../index.html" class="logo-box">
-      <img src="../images/logo2.jpg.png" alt="City Beats Dance Studio Logo" class="nav-logo-img" />
-      <div class="logo-text">
-        <span class="brand-name">CITY BEATS</span>
-        <span class="brand-subtext">DANCE STUDIO</span>
-      </div>
-    </a>
-     
-     
-      <h1>Book Your <span>Free Trial Class</span></h1>
-      <p>
-        Experience the energy of City Beats Dance Studio with a trial class.
-        Discover your style, meet our instructors, and step into a space full of rhythm,
-        creativity, and confidence.
-      </p>
 
-      <div class="trial-features">
-        <div class="trial-feature">
-          <i class="fas fa-check-circle"></i>
-          <span>Beginner Friendly Classes</span>
-        </div>
+    <img
+      src="../images/logo2.jpg.png"
+      alt="City Beats Logo"
+      class="nav-logo-img"
+    >
 
-        <div class="trial-feature">
-          <i class="fas fa-check-circle"></i>
-          <span>Expert Dance Instructors</span>
-        </div>
-
-        <div class="trial-feature">
-          <i class="fas fa-check-circle"></i>
-          <span>Flexible Trial Timings</span>
-        </div>
-
-        <div class="trial-feature">
-          <i class="fas fa-check-circle"></i>
-          <span>All Age Groups Welcome</span>
-        </div>
-      </div>
-
-      <div class="trial-contact-mini">
-        <div class="mini-box">
-          <i class="fas fa-phone-alt"></i>
-          <div>
-            <strong>Call Us</strong>
-            <p>+91 98765 43210</p>
-          </div>
-        </div>
-
-        <div class="mini-box">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <strong>Studio Location</strong>
-            <p>City Beats Dance Studio</p>
-          </div>
-        </div>
-      </div>
+    <div class="logo-text">
+      <span class="brand-name">CITY BEATS</span>
+      <span class="brand-subtext">DANCE STUDIO</span>
     </div>
 
-    
-    <div class="trial-form-card">
-      <div class="form-top">
-        <span class="form-tag">Book Now</span>
-        <h2>Reserve Your Trial Spot</h2>
-        <p>Fill in your details and we’ll contact you shortly.</p>
+  </a>
+    <h1>Book Trial Class</h1>
+
+    <p>
+      Start your dance journey with a free trial session.
+    </p>
+
+    <form>
+
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
       </div>
 
-      <form id="trialForm" class="trial-form">
-        <div class="form-grid">
-          <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required />
-          </div>
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
 
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number" required />
-          </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required>
+      </div>
 
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" id="email" placeholder="Enter your email" required />
-          </div>
+      <div class="input-group">
+        <i class="fas fa-music"></i>
 
-          <div class="form-group">
-            <label>Age Group</label>
-            <select id="ageGroup" required>
-              <option value="">Select age group</option>
-              <option>Kids (5-12)</option>
-              <option>Teens (13-18)</option>
-              <option>Adults (18+)</option>
-            </select>
-          </div>
+        <select required>
+          <option value="">Select Dance Style</option>
+          <option>Hip Hop</option>
+          <option>Bollywood</option>
+          <option>Contemporary</option>
+          <option>Jazz</option>
+          <option>Salsa</option>
+        </select>
+      </div>
 
-          <div class="form-group">
-            <label>Dance Style</label>
-            <select id="danceStyle" required>
-              <option value="">Choose a dance style</option>
-              <option>Hip Hop</option>
-              <option>Contemporary</option>
-              <option>Bollywood</option>
-              <option>Kids Dance</option>
-              <option>Jazz</option>
-              <option>Salsa</option>
-              <option>Freestyle</option>
-            </select>
-          </div>
+      <div class="input-group">
+        <i class="fas fa-calendar"></i>
+        <input type="date" required>
+      </div>
 
-          <div class="form-group">
-            <label>Preferred Date</label>
-            <input type="date" id="date" required />
-          </div>
+      <button class="btn" type="submit">
+        Book Now
+      </button>
 
-          <div class="form-group">
-            <label>Preferred Time</label>
-            <select id="time" required>
-              <option value="">Select time slot</option>
-              <option>08:00 AM - 09:00 AM</option>
-              <option>10:00 AM - 11:00 AM</option>
-              <option>04:00 PM - 05:00 PM</option>
-              <option>06:00 PM - 07:00 PM</option>
-              <option>07:00 PM - 08:00 PM</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Experience Level</label>
-            <select id="experience" required>
-              <option value="">Select experience</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group full-width">
-          <label>Additional Notes</label>
-          <textarea id="message" rows="5" placeholder="Tell us anything you'd like us to know..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary submit-btn">
-          Book Trial Class
-        </button>
-      </form>
-    </div>
+    </form>
 
   </div>
-</section>
 
-
-<div class="success-popup" id="successPopup">
-  <div class="success-box">
-    <i class="fas fa-check-circle"></i>
-    <h3>Trial Booked Successfully!</h3>
-    <p>We’ll contact you shortly with your class confirmation.</p>
-    <button id="closePopup" class="btn btn-primary">Close</button>
-  </div>
 </div>
 
+<script>
 
-<script src="book.js"></script>
+const themeBtn = document.getElementById("themeToggle");
+const rtlBtn = document.getElementById("rtlToggle");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+rtlBtn.addEventListener("click", () => {
+
+  document.documentElement.dir =
+    document.documentElement.dir === "rtl"
+      ? "ltr"
+      : "rtl";
+
+});
+
+</script>
 
 </body>
 </html>

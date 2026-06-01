@@ -4,17 +4,7 @@
   margin: 0 auto 50px;
 }
 
-.section-tag {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: var(--soft);
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 0.88rem;
-  margin-bottom: 16px;
-  border: 1px solid var(--border);
-}
+
 
 body.dark-mode .section-tag {
   color: var(--accent);
@@ -936,50 +926,50 @@ body.dark-mode .cta-box .btn-secondary:hover {
     max-width: 280px;
   }
 }
-/* ===========================
-   SECTION BADGE STYLE
-=========================== */
+.program-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
 
-.section-badge,
-.section-tag {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  margin-bottom: 18px;
+  color:var(--primary);
+  font-weight:700;
+  text-decoration:none;
 
-  background: transparent;
-  border: none;
-
-  color: var(--primary);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  transition:all .3s ease;
 }
 
-/* DARK MODE */
-body.dark-mode .section-badge,
-body.dark-mode .section-tag {
-  color: var(--accent);
+body.dark-mode .program-link{
+  color:var(--accent);
 }
 
-/* LINE UNDER BADGE */
-.section-badge::after,
-.section-tag::after {
-  content: "";
-  display: block;
-
-  width: 70px;
-  height: 3px;
-
-  margin: 10px auto 0;
-  border-radius: 999px;
-
-  background: var(--primary);
+.program-link::after{
+  content:"→";
+  font-size:1rem;
+  transition:transform .3s ease;
 }
 
-/* DARK MODE LINE */
-body.dark-mode .section-badge::after,
-body.dark-mode .section-tag::after {
-  background: var(--accent);
+.program-link:hover{
+  color:var(--primary);
+  transform:translateX(5px);
+}
+
+.program-link:hover::after{
+  transform:translateX(6px);
+}
+
+.program-link:active{
+  transform:translateX(2px) scale(.98);
+}
+
+/* RTL */
+html[dir="rtl"] .program-link::after{
+  content:"←";
+}
+
+html[dir="rtl"] .program-link:hover{
+  transform:translateX(-5px);
+}
+
+html[dir="rtl"] .program-link:hover::after{
+  transform:translateX(-6px);
 }

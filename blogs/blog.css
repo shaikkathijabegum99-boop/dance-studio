@@ -40,18 +40,7 @@ body.dark-mode .blog-hero {
   color: rgba(255,255,255,0.88);
 }
 
-.section-badge {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.12);
-  color: #ffffff;
-  border: 1px solid rgba(255,255,255,0.15);
-  backdrop-filter: blur(10px);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
+
 /* ===========================
    SMALL HERO SECTION
 =========================== */
@@ -326,9 +315,9 @@ body.dark-mode .cta-box {
   margin-bottom: 16px;
   padding: 8px 16px;
   border-radius: 999px;
-  background: var(--soft);
+ 
   color: var(--primary);
-  border: 1px solid var(--border);
+ 
   font-size: 0.85rem;
   font-weight: 700;
 }
@@ -475,50 +464,3 @@ html[dir="rtl"] .featured-blog-content {
 }
 
 
-/* ===========================
-   SECTION BADGE STYLE
-=========================== */
-
-.section-badge,
-.section-tag {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  margin-bottom: 18px;
-
-  background: transparent;
-  border: none;
-
-  color: var(--primary);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* DARK MODE */
-body.dark-mode .section-badge,
-body.dark-mode .section-tag {
-  color: var(--accent);
-}
-
-/* LINE UNDER BADGE */
-.section-badge::after,
-.section-tag::after {
-  content: "";
-  display: block;
-
-  width: 70px;
-  height: 3px;
-
-  margin: 10px auto 0;
-  border-radius: 999px;
-
-  background: var(--primary);
-}
-
-/* DARK MODE LINE */
-body.dark-mode .section-badge::after,
-body.dark-mode .section-tag::after {
-  background: var(--accent);
-}
