@@ -35,7 +35,7 @@ body.dark-mode .about-hero {
   justify-content: center;
   padding: 8px 16px;
   border-radius: 999px;
-  background: rgba(225, 29, 72, 0.1);
+ 
   color: var(--primary);
   font-size: 0.85rem;
   font-weight: 700;
@@ -766,13 +766,13 @@ body.dark-mode .about-cta-section .btn-primary {
 }
 
 
-html[dir="rtl"] .about-hero-buttons,
+/*html[dir="rtl"] .about-hero-buttons,
 html[dir="rtl"] .cta-buttons {
   flex-direction: row-reverse;
-}
+}*/
 
 html[dir="rtl"] .story-point {
-  flex-direction: row-reverse;
+  /*flex-direction: row-reverse;*/
   text-align: right;
 }
 
@@ -1213,51 +1213,4 @@ body.dark-mode .cta-box .btn-secondary:hover {
     width: 100%;
     max-width: 280px;
   }
-}
-/* ===========================
-   SECTION BADGE STYLE
-=========================== */
-
-.section-badge,
-.section-tag {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  margin-bottom: 18px;
-
-  background: transparent;
-  border: none;
-
-  color: var(--primary);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* DARK MODE */
-body.dark-mode .section-badge,
-body.dark-mode .section-tag {
-  color: var(--accent);
-}
-
-/* LINE UNDER BADGE */
-.section-badge::after,
-.section-tag::after {
-  content: "";
-  display: block;
-
-  width: 70px;
-  height: 3px;
-
-  margin: 10px auto 0;
-  border-radius: 999px;
-
-  background: var(--primary);
-}
-
-/* DARK MODE LINE */
-body.dark-mode .section-badge::after,
-body.dark-mode .section-tag::after {
-  background: var(--accent);
 }

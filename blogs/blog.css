@@ -67,7 +67,7 @@ body.dark-mode .blog-hero {
   line-height: 1.8;
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
   .blog-hero {
     min-height: 320px;

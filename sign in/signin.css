@@ -282,7 +282,7 @@ html[dir="rtl"] .page-actions {
   box-shadow: 0 0 0 4px rgba(255,77,109,0.08);
 }
 
-/* PASSWORD */
+
 
 .password-wrap input {
   padding-right: 55px;
@@ -299,7 +299,7 @@ html[dir="rtl"] .page-actions {
   color: var(--text-light);
 }
 
-/* OPTIONS */
+
 
 .auth-options {
   display: flex;
@@ -325,7 +325,7 @@ html[dir="rtl"] .page-actions {
   text-decoration: underline;
 }
 
-/* BUTTON */
+
 
 .auth-btn {
   width: 100%;
@@ -335,7 +335,7 @@ html[dir="rtl"] .page-actions {
   font-weight: 700;
 }
 
-/* DIVIDER */
+
 
 .divider {
   position: relative;
@@ -359,7 +359,7 @@ html[dir="rtl"] .page-actions {
   color: var(--text-light);
 }
 
-/* SOCIAL LOGIN */
+
 
 .social-login {
   display: grid;
@@ -391,7 +391,7 @@ html[dir="rtl"] .page-actions {
   border: none;
 }
 
-/* SWITCH */
+
 
 .auth-switch {
   text-align: center;

@@ -89,7 +89,7 @@ ul {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .section-sm {
@@ -428,7 +428,7 @@ body.dark-mode .card-link{
   transform:translateX(2px) scale(0.98);
 }
 
-/* RTL Support */
+
 html[dir="rtl"] .card-link::after{
   content:"←";
 }
@@ -454,8 +454,9 @@ html[dir="rtl"] .card-link:hover::after{
   
 }
 
-/* Small line before text */
+
 .section-badge::before,
+
 .section-tag::before{
   content:"";
   width:40px;
@@ -464,7 +465,7 @@ html[dir="rtl"] .card-link:hover::after{
   background:var(--primary);
 }
 
-/* Dark mode */
+
 body.dark-mode .section-badge,
 body.dark-mode .section-tag{
   color:var(--accent);

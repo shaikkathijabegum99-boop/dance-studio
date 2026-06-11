@@ -528,15 +528,15 @@ html[dir="rtl"] .premium-experience-grid {
   direction: rtl;
 }
 
-html[dir="rtl"] .hero-actions,
+/*html[dir="rtl"] .hero-actions,
 html[dir="rtl"] .hero-mini-stats,
-html[dir="rtl"] .experience-item,
+
 html[dir="rtl"] .program-link {
   flex-direction: row-reverse;
-}
+}*/
 
 html[dir="rtl"] .hero-premium-content,
-html[dir="rtl"] .experience-content,
+/*html[dir="rtl"] .experience-content,*/
 html[dir="rtl"] .schedule-card,
 html[dir="rtl"] .premium-testimonial-card {
   text-align: right;
@@ -961,7 +961,7 @@ body.dark-mode .program-link{
   transform:translateX(2px) scale(.98);
 }
 
-/* RTL */
+
 html[dir="rtl"] .program-link::after{
   content:"←";
 }

@@ -205,7 +205,7 @@ body{
   transform:translateY(-2px);
 }
 
-/* RTL */
+
 
 html[dir="rtl"] .logo-box{
   flex-direction:row-reverse;
@@ -226,7 +226,7 @@ html[dir="rtl"] .input-group select{
   padding-right:48px;
 }
 
-/* MOBILE */
+
 
 @media(max-width:480px){
 

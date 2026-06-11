@@ -69,19 +69,41 @@ body.dark-mode .services-hero {
 }
 
 .section-badge,
-.section-tag {
+.section-tag
+ {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 10px 18px;
   border-radius: 999px;
  
-  color: var(--primary);
+   
+  color: white;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
+.hero-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 24px;
+    border-radius: 50px;
+
+   
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.8),
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 20px rgba(255,255,255,0.4);
+ 
+
+    color: #fff;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
 body.dark-mode .section-badge,
 body.dark-mode .section-tag {
  
@@ -543,3 +565,113 @@ body.dark-mode .cta-box .btn-secondary:hover {
   color: var(--text-light);
 }
 
+/* ==========================================================
+   RTL / LTR SUPPORT
+========================================================== */
+
+/* Default LTR */
+html[dir="ltr"]{
+    direction:ltr;
+}
+
+html[dir="rtl"]{
+    direction:rtl;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+html[dir="rtl"] .services-hero-content,
+html[dir="rtl"] .section-heading{
+    text-align:center;
+}
+
+/* ==========================================================
+   SERVICE CARDS
+========================================================== */
+
+html[dir="rtl"] .service-card{
+    text-align:right;
+    align-items:flex-start;
+}
+
+html[dir="rtl"] .service-features li{
+    padding-left:0;
+    padding-right:24px;
+}
+
+html[dir="rtl"] .service-features li::before{
+    left:auto;
+    right:0;
+}
+
+/* LTR Reset */
+html[dir="ltr"] .service-features li{
+    padding-left:24px;
+    padding-right:0;
+}
+
+html[dir="ltr"] .service-features li::before{
+    left:0;
+    right:auto;
+}
+
+/* ==========================================================
+   BENEFITS
+========================================================== */
+
+html[dir="rtl"] .benefit-card{
+    text-align:center;
+}
+
+/* ==========================================================
+   CTA SECTION
+========================================================== */
+
+html[dir="rtl"] .cta-box,
+html[dir="rtl"] .join-cta{
+    text-align:center;
+}
+
+html[dir="rtl"] .cta-actions{
+    flex-direction:row-reverse;
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+html[dir="rtl"] .btn i{
+    margin-left:0;
+    margin-right:8px;
+}
+
+html[dir="ltr"] .btn i{
+    margin-right:0;
+    margin-left:8px;
+}
+
+/* ==========================================================
+   SERVICE IMAGE
+========================================================== */
+
+html[dir="rtl"] .service-img{
+    direction:rtl;
+}
+
+/* ==========================================================
+   MOBILE RTL
+========================================================== */
+
+@media (max-width:639px){
+
+    html[dir="rtl"] .cta-actions{
+        flex-direction:column;
+    }
+
+    html[dir="rtl"] .service-card{
+        text-align:right;
+    }
+}

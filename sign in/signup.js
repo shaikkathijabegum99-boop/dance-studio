@@ -32,7 +32,7 @@ toggleButtons.forEach((button) => {
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = themeToggle.querySelector("i");
 
-/* LOAD SAVED THEME */
+
 if (localStorage.getItem("theme") === "dark") {
 
   document.body.classList.add("dark-mode");
@@ -42,7 +42,7 @@ if (localStorage.getItem("theme") === "dark") {
 
 }
 
-/* TOGGLE THEME */
+
 themeToggle.addEventListener("click", () => {
 
   document.body.classList.toggle("dark-mode");
@@ -75,7 +75,7 @@ themeToggle.addEventListener("click", () => {
 const dirToggle = document.getElementById("dirToggle");
 const html = document.documentElement;
 
-/* LOAD SAVED DIRECTION */
+
 const savedDir = localStorage.getItem("direction");
 
 if (savedDir) {
@@ -86,7 +86,7 @@ if (savedDir) {
 
 }
 
-/* TOGGLE DIRECTION */
+
 dirToggle.addEventListener("click", () => {
 
   const currentDir = html.getAttribute("dir");
@@ -127,7 +127,7 @@ signupForm.addEventListener("submit", (e) => {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
-  /* VALIDATION */
+  
   if (password !== confirmPassword) {
 
     alert("Passwords do not match.");
@@ -142,7 +142,7 @@ signupForm.addEventListener("submit", (e) => {
 
   }
 
-  /* SUCCESS */
+  
   alert(`Welcome ${fullName}! Your account has been created successfully.`);
 
   console.log({

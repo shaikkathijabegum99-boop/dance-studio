@@ -42,9 +42,9 @@ body.dark-mode .hero-section {
   display: inline-block;
   padding: 8px 14px;
   border-radius: 999px;
-  background: var(--soft);
+ 
   color: var(--primary);
-  border: 1px solid var(--border);
+
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -518,12 +518,8 @@ body.dark-mode .cta-box {
 }
 
 
-html[dir="rtl"] .hero-actions,
-html[dir="rtl"] .hero-mini-stats,
-html[dir="rtl"] .why-item,
-html[dir="rtl"] .faq-question {
-  flex-direction: row-reverse;
-}
+
+
 
 html[dir="rtl"] .hero-content,
 html[dir="rtl"] .why-content,

@@ -19,7 +19,7 @@
     url("../images/img4.jpg") center/cover no-repeat;
 }
 
-/* OPTIONAL DARK MODE EFFECT */
+
 body.dark-mode .contact-hero {
   background: linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -28,14 +28,14 @@ body.dark-mode .contact-hero {
     url("../images/img4.jpg") center/cover no-repeat;
 }
 
-/* TEXT COLOR ON IMAGE */
+
 .contact-hero h1,
 .contact-hero p
 {
   color: #ffffff;
 }
 
-/* GLASS EFFECT */
+
 .contact-hero-content {
   position: relative;
   z-index: 2;
@@ -44,7 +44,7 @@ body.dark-mode .contact-hero {
   backdrop-filter: blur(6px);
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
   .contact-hero {
     padding-top: 40px;
@@ -62,7 +62,7 @@ body.dark-mode .contact-hero {
 }
 
 .contact-hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
+
   line-height: 1.1;
   margin-bottom: 18px;
   font-weight: 800;
@@ -83,14 +83,33 @@ body.dark-mode .contact-hero {
   margin-bottom: 34px;
 }
 
+.hero-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
+    padding: 10px 24px;
+    border-radius: 50px;
+
+   
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.8),
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 20px rgba(255,255,255,0.4);
+ 
+
+    color: #fff;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
 
 body.dark-mode .section-badge {
   color: var(--accent);
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+ 
   line-height: 1.15;
   margin-bottom: 14px;
 }
@@ -121,7 +140,7 @@ body.dark-mode .section-badge {
 
 .info-cards {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 .info-card {
@@ -181,7 +200,7 @@ body.dark-mode .info-card a:hover {
    SOCIAL BOX
 =========================== */
 .social-box {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 28px;
   border-radius: 24px;
   border: 1px solid var(--border);
@@ -524,14 +543,14 @@ html[dir="rtl"] select {
   text-align: right;
 }
 
-/* PLACEHOLDER RTL */
+
 html[dir="rtl"] input::placeholder,
 html[dir="rtl"] textarea::placeholder {
   direction: rtl;
   text-align: right;
 }
 
-/* FOR ALL BROWSERS */
+
 html[dir="rtl"] input::-webkit-input-placeholder,
 html[dir="rtl"] textarea::-webkit-input-placeholder {
   direction: rtl;
@@ -550,7 +569,7 @@ html[dir="rtl"] textarea::-ms-input-placeholder {
   text-align: right;
 }
 
-/* SELECT RTL */
+
 html[dir="rtl"] select {
   text-align: right;
   text-align-last: right;
@@ -573,7 +592,7 @@ html[dir="rtl"] select {
   justify-content: center;
 }
 
-/* RTL SUPPORT */
+
 html[dir="rtl"] .section-heading,
 html[dir="rtl"] .section-title,
 html[dir="rtl"] .section-text,
