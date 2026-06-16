@@ -487,4 +487,151 @@ body.dark-mode .section-tag::before{
 body.dark-mode .section-badge::before,
 body.dark-mode .section-tag::before {
     background: var(--accent);
+}/* =========================
+   RESPONSIVE TYPOGRAPHY
+========================= */
+
+/* Mobile: < 640px */
+@media (max-width: 639px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .page-title,
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .page-subtitle,
+    .section-text {
+        font-size: 0.9rem;
+    }
+
+    .section-badge,
+    .section-tag {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .btn,
+    .nav-btn {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card p,
+    .card li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet: 640px - 1024px */
+@media (min-width: 640px) and (max-width: 1023px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    .page-title,
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .page-subtitle,
+    .section-text {
+        font-size: 0.95rem;
+    }
+
+    .section-badge,
+    .section-tag {
+        font-size: 0.8rem;
+    }
+
+    .btn,
+    .nav-btn {
+        font-size: 0.95rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p,
+    .card li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Desktop: 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    html {
+        font-size: 15.5px;
+    }
+
+    .page-title,
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .page-subtitle,
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .section-badge,
+    .section-tag {
+        font-size: 0.85rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p,
+    .card li {
+        font-size: 1rem;
+    }
+}
+
+/* Large Screens: ≥ 1280px */
+@media (min-width: 1280px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .page-title,
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .page-subtitle,
+    .section-text {
+        font-size: 1.05rem;
+    }
+
+    .section-badge,
+    .section-tag {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p,
+    .card li {
+        font-size: 1rem;
+    }
+}@media (max-width: 639px) {
+    .section-badge::before,
+    .section-tag::before {
+        width: 10px;
+        height: 10px;
+    }
 }
