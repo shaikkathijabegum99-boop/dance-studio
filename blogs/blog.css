@@ -23,6 +23,33 @@ body.dark-mode .blog-hero {
   position: relative;
   z-index: 2;
 }
+/* =========================
+   READ MORE HOVER EFFECT
+========================= */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary, #e91e63);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.read-more i {
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.read-more:hover {
+    color: var(--accent, #c2185b);
+    gap: 14px;
+}
+
+.read-more:hover i {
+    transform: translateX(6px);
+}
+
+/* Underline Animation */
 
 .blog-hero-title {
   font-size: clamp(2.2rem, 5vw, 4.5rem);
@@ -375,7 +402,7 @@ body.dark-mode .section-tag {
 
 .newsletter-form input {
   flex: 1;
-  padding: 16px 18px;
+  padding: 10px 15px;
   border-radius: 16px;
   border: 1px solid var(--border);
   background: var(--light);

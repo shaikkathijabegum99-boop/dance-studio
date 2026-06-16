@@ -86,11 +86,11 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:10px;
+
 
   text-decoration:none;
 
-  margin-bottom:25px;
+
 }
 
 .nav-logo-img{
