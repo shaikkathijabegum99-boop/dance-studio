@@ -87,10 +87,9 @@ body.dark-mode .blog-detail-hero::before {
 
 /* Badge */
 .blog-detail-hero .section-badge {
-    background: rgba(255, 255, 255, 0.12);
+  
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+   
 }
 
 /* Dark Mode */

@@ -93,7 +93,7 @@ ul {
 }
 
 .section-sm {
-  padding: 70px 0;
+  padding: 20px 0;
 }
 
 .section-lg {
@@ -474,4 +474,17 @@ body.dark-mode .section-tag{
 body.dark-mode .section-badge::before,
 body.dark-mode .section-tag::before{
   background:var(--accent);
+}.section-badge::before,
+.section-tag::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+body.dark-mode .section-badge::before,
+body.dark-mode .section-tag::before {
+    background: var(--accent);
 }
