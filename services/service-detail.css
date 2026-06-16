@@ -37,7 +37,7 @@
 }
 
 .service-detail-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 4rem);
   line-height: 1.1;
   margin-bottom: 18px;
   color: var(--text);
@@ -132,9 +132,9 @@
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
-  margin: 14px 0 18px;
+
   color: var(--text);
 }
 
@@ -598,7 +598,7 @@ body.dark-mode .service-cta-section {
 }
 
 .service-detail-title {
-  font-size: clamp(2.4rem, 5vw, 4rem);
+ 
   line-height: 1.1;
   margin-bottom: 20px;
   color: var(--text);
@@ -696,7 +696,7 @@ body.dark-mode .service-cta-section {
 
 .service-about-image {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   object-fit: cover;
   border-radius: 30px;
   box-shadow: var(--shadow);
@@ -707,7 +707,7 @@ body.dark-mode .service-cta-section {
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+
   line-height: 1.2;
   margin-bottom: 16px;
   color: var(--text);

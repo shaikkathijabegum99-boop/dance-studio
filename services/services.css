@@ -4,7 +4,7 @@
 
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../images/private.jpg.jpg");
+    url("../images/img4.jpg");
 
   background-size: cover;
   background-position: center;
@@ -20,7 +20,7 @@
 body.dark-mode .services-hero {
   background:
     linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
-    url("../images/private.jpg.jpg");
+    url("../images/img4.jpg");
 
   background-size: cover;
   background-position: center;
@@ -111,7 +111,7 @@ body.dark-mode .section-tag {
 }
 
 .section-title {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
   margin: 18px 0 14px;
 }

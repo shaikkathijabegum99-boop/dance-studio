@@ -62,7 +62,7 @@ body.dark-mode .contact-hero {
 }
 
 .contact-hero h1 {
-
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   margin-bottom: 18px;
   font-weight: 800;
@@ -109,7 +109,7 @@ body.dark-mode .section-badge {
 }
 
 .section-title {
- 
+   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.15;
   margin-bottom: 14px;
 }

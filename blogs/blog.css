@@ -7,13 +7,13 @@
   padding-top: 70px;
   background:
     linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
-    url("../images/blog4.jpg") center/cover no-repeat;
+    url("../images/img5.jpg") center/cover no-repeat;
 }
 
 body.dark-mode .blog-hero {
   background:
     linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
-    url("../images/blog4.jpg") center/cover no-repeat;
+    url("../images/img5.jpg") center/cover no-repeat;
 }
 
 .blog-hero-content {
@@ -25,7 +25,7 @@ body.dark-mode .blog-hero {
 }
 
 .blog-hero-title {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
   line-height: 1.08;
   font-weight: 800;
   color: #ffffff;
@@ -38,6 +38,31 @@ body.dark-mode .blog-hero {
   font-size: 1.05rem;
   line-height: 1.9;
   color: rgba(255,255,255,0.88);
+}
+.hero-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 24px;
+    border-radius: 50px;
+
+   
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.8),
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 20px rgba(255,255,255,0.4);
+ 
+
+    color: #fff;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+body.dark-mode .section-badge,
+body.dark-mode .section-tag {
+ 
+  color: var(--accent);
 }
 
 
