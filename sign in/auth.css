@@ -366,10 +366,28 @@ color: var(--primary);
 }
 
 .social-btn:hover{
-    border-color:var(--primary);
-    color:var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
 }
 
+.social-btn:hover i{
+    color: var(--primary);
+}body.dark-mode .social-btn{
+    background: var(--primary);
+    color: #ffffff;
+}
+
+body.dark-mode .social-btn:hover{
+    background: transparent;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+body.dark-mode .social-btn:hover i{
+    color: var(--accent);
+}
 .social-btn i{
     font-size:1rem;
 }
