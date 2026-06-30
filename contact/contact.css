@@ -304,7 +304,7 @@ body.dark-mode .info-card-modern a{
     border-radius: var(--radius-lg);
 
     background: var(--soft);
-    border: 1px solid var(--border);
+   
 }
 
 body.dark-mode .cta-modern{
@@ -536,4 +536,77 @@ body.dark-mode .cta-modern{
 
     color: #ffffff;
     font-size: 0.8rem;
+}/* =========================
+   CTA SECTION SPACING
+========================= */
+
+.cta-section{
+  
+    background: var(--soft);
+}
+
+body.dark-mode .cta-section{
+    background: #0f1117;
+}
+
+.cta-modern{
+    padding: 80px 40px;
+    border-radius: var(--radius-lg);
+}/* Mobile */
+@media (max-width:639px){
+    .cta-section{
+        padding: 60px 0;
+    }
+
+    .cta-modern{
+        padding: 50px 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width:640px) and (max-width:1024px){
+    .cta-section{
+        padding: 70px 0;
+    }
+
+    .cta-modern{
+        padding: 60px 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width:1024px) and (max-width:1280px){
+    .cta-section{
+        padding: 10px 0;
+    }
+}
+
+/* Large */
+@media (min-width:1281px){
+    .cta-section{
+        padding: 100px 0;
+    }
+
+    .cta-modern{
+        padding: 90px 50px;
+    }
+}.hero-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px ;
+    border-radius: 50px;
+
+   
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.8),
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 20px rgba(255,255,255,0.4);
+ 
+
+    color: #fff;
+    font-weight: 600;
+
+    margin-bottom: 20px;
 }
