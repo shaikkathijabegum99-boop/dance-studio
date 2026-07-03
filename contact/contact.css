@@ -299,7 +299,7 @@ body.dark-mode .info-card-modern a{
 ========================= */
 
 .cta-modern{
-    padding: 70px 20px;
+    padding: 50px 20px;
 
     border-radius: var(--radius-lg);
 
@@ -461,9 +461,7 @@ body.dark-mode .cta-modern{
 
 
 
-.cta-modern{
-    padding: 80px 40px;
-}
+
 
 .section-heading{
     margin-bottom: 50px;
@@ -550,7 +548,7 @@ body.dark-mode .cta-section{
 }
 
 .cta-modern{
-    padding: 80px 40px;
+  
     border-radius: var(--radius-lg);
 }/* Mobile */
 @media (max-width:639px){
